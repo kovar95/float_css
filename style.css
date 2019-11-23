@@ -30,6 +30,7 @@ header nav {
 header nav:hover {
 	background-color: rgba(69, 192, 174, 0.9);
 	border-bottom: 1px solid white;
+	box-shadow: 0px 2px 10px white;
 }
 
 header nav ul {
@@ -51,6 +52,11 @@ header nav > ul > li{
     padding-right: 55px;
     float: left;
     position: relative;
+}
+
+header nav > ul > li a[href="#sub-menu"]{
+    box-sizing: content-box;
+    padding-bottom: 30px;
 }
 
 header nav ul:first-child li {
@@ -93,7 +99,7 @@ header nav:hover ul li a:hover {
 
 header nav ul li ul {
 	position: absolute;
-    top: 26px;
+    top: 45px;
     left: -14px;
     font-style: italic;
     text-align: center;
@@ -115,6 +121,7 @@ header nav ul li ul li {
     max-height: 25px;
     transition: max-height 0.5s ease-out,
  				opacity 0.9s ease-out;
+    box-shadow: 2px 2px 10px white;
 }
 
 header nav ul li:hover ul li {
@@ -166,11 +173,11 @@ main article div.price {
 
 main article div.price span {
 	color: white;
-    font-size: 50px;
+    font-size: 30px;
     text-shadow: 2px 2px 2px black;
     position: absolute;
     z-index: 15;
-    top: 10%;
+    top: 7%;
     left: 0%;
     transform: rotate(-45deg);
     opacity: 0.6;
@@ -180,14 +187,14 @@ main article div.price span {
 main article div.price:hover span {
     transition: font-size 1.2s ease-out,
     			opacity .5s ease-out;
-    font-size: 65px;
+    font-size: 40px;
     opacity: 0.9;
 }
 
 main article div.price div.akcija {
 	position: absolute;
-    height: 35%;
-    width: 35%;
+    height: 15%;
+    width: 15%;
     background-color: red;
     border-radius: 10px 0 100%;
     border-bottom: 1px solid white;
@@ -198,8 +205,8 @@ main article div.price div.akcija {
 }
 
 main article div.price:hover div.akcija {
-	height: 45%;
-    width: 45%;
+	height: 30%;
+    width: 30%;
     visibility: visible;
     transition: all 1.2s ease-out;
 }
@@ -266,25 +273,24 @@ main form select {
 }
 
 main form div input[type="submit"] {
-	width: 50%;
-	font-weight: bold;
-	text-transform: uppercase;
+    width: 50%;
+    font-weight: bold;
+    text-transform: uppercase;
     background-color: #4d78a9;
-	color: white;
+    color: white;
     text-shadow: 1px 1px 1px black;
-    box-shadow: -2px -2px 2px 0 #5ab9e7,
-    			 inset -2px -2px 3px 0 #424b42;
-	display: block;
-	margin: 0 auto;
-	cursor: pointer;
+    box-shadow: -2px -2px 2px 0 #5ab9e7, inset -2px -2px 3px 0 #424b42;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 25px;
 }
 
 main form div input[type="submit"]:hover {
-    background-color: #e5f7f8;
-	color: #4444c2;
-    text-shadow: 1px 1px 1px black;	
-    box-shadow: 2px 2px 2px 0 #5ab9e7,
-				inset 2px 2px 3px 0 #424b42;		 
+    background-color: #719ac8;
+    color: #c2881e;
+    text-shadow: -1px 1px 1px black;
+    box-shadow: 2px 2px 2px 0 #5ab9e7, inset 2px 2px 3px 0 #424b42;		 
 }
 
 a.to-top {
